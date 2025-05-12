@@ -69,7 +69,7 @@ class HolidayRoster {
                 let progress = 0;
                 
                 const animateProgress = () => {
-                    if (progress < 35) { // Starting at 35% to show some progress
+                    if (progress < 0) { // Starting at % to show some progress
                         progress += Math.random() * 5;
                         if (progress > 100) progress = 100;
                         progressBar.style.width = `${progress}%`;
